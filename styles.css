@@ -1,0 +1,98 @@
+@import url(/normalize.css);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  user-select: none;
+  min-width: 375px;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8052ec, #d161ff) no-repeat center;
+  background-size: cover;
+  font-size: 1.8rem;
+}
+
+form {
+  margin: 5rem 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.input-section,
+.lists {
+  background-color: white;
+  padding: 2rem;
+  width: 370px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 14px 4px rgb(0 0 0 / 29%);
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  padding: 1rem 1.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline-color: #8052ec;
+  font-size: 1.4rem;
+  width: 70%;
+}
+
+::placeholder {
+  font-size: 1.4rem;
+}
+
+button {
+  color: white;
+  background-color: #8052ec;
+  outline: none;
+  border: none;
+  padding: 0 1.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1.5rem 0 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+i {
+  color: #8052ec;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+i:hover {
+  transform: scale(1.25);
+}
+
+span {
+  cursor: pointer;
+  letter-spacing: 0.1ch;
+  transition: all 0.1s ease-in-out;
+}
+
+span:hover {
+  transform: scale(1.25);
+}
+
+.task--done span {
+  text-decoration: line-through;
+  font-weight: bold;
+}
