@@ -82,14 +82,14 @@ i:hover {
   transform: scale(1.25);
 }
 
-span {
+li {
   cursor: pointer;
   letter-spacing: 0.1ch;
   transition: all 0.1s ease-in-out;
 }
 
-span:hover {
-  transform: scale(1.25);
+li:hover {
+  transform: scale(1.015);
 }
 
 .task--done span {

@@ -43,8 +43,8 @@ function add(task) {
   if (task.complete) list.classList.add("task--done");
 
   // task
-  taskText.addEventListener("click", (e) => {
-    const task = e.target.closest("li");
+  list.addEventListener("click", (e) => {
+    const task = e.target;
     const taskId = task.dataset.id;
 
     task.classList.toggle("task--done");
